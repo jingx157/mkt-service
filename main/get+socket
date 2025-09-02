@@ -1,0 +1,22 @@
+GET https://apikey.phanmemmkt.vn/subscriber-event/?EIO=4&transport=polling&t=4yg2agbs HTTP/1.1
+User-Agent: node-XMLHttpRequest
+Accept: */*
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZGU0MjRkMS05YTM3LTRmYjgtYTFkNi05Y2IzMjZlN2FkMmMiLCJlbWFpbCI6Imx0bmdjYWZlQGdtYWlsLmNvbSIsImlhdCI6MTc1Njc5MjYwMSwiZXhwIjoyMzU2NzkyNjAxfQ.INKkfiEc6oIqL6DqzECopJUdulzBvPD8vyN5MNk3Y2M
+Host: apikey.phanmemmkt.vn:443
+Connection: close
+
+HTTP/1.1 200 OK
+Date: Tue, 02 Sep 2025 05:56:46 GMT
+Content-Type: text/plain; charset=UTF-8
+Content-Length: 118
+Connection: close
+Server: cloudflare
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Access-Control-Allow-Origin: *
+cache-control: no-store
+cf-cache-status: DYNAMIC
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=zgET5kPKTQ%2BbdFO7%2FAbLdAh3Q7kswJ3bjMV7otmG4cRqWK2guEGQYly3BeE%2BHivJ3rSRNqkzhaj%2FitHoUYu6Hdp4XGHwzBA5VUoTTGrjn71cYA%3D%3D"}]}
+CF-RAY: 978ac41c5ca18142-HKG
+alt-svc: h3=":443"; ma=86400
+
+0{"sid":"LQgdGCAMSlDErH3EABNg","upgrades":["websocket"],"pingInterval":25000,"pingTimeout":20000,"maxPayload":1000000}

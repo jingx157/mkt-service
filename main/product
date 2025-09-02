@@ -1,0 +1,49 @@
+GET https://apikey.phanmemmkt.vn/api/v1/app/products?status=true HTTP/1.1
+Accept: application/json, text/plain, */*
+Content-Type: application/json
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) MKTClient/3.0.3 Chrome/130.0.6723.118 Electron/33.2.0 Safari/537.36
+t: 1756792601705
+hash: C9871CCB5AD86F5AC07FF7930E94B4A984DFCDD2D83E3C3352508177E0C0FA25
+license: UnLicense
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZGU0MjRkMS05YTM3LTRmYjgtYTFkNi05Y2IzMjZlN2FkMmMiLCJlbWFpbCI6Imx0bmdjYWZlQGdtYWlsLmNvbSIsImlhdCI6MTc1Njc5MjYwMSwiZXhwIjoyMzU2NzkyNjAxfQ.INKkfiEc6oIqL6DqzECopJUdulzBvPD8vyN5MNk3Y2M
+Accept-Encoding: gzip, compress, deflate, br
+Host: apikey.phanmemmkt.vn
+Connection: close
+
+HTTP/1.1 200 OK
+Date: Tue, 02 Sep 2025 05:56:44 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: close
+Server: cloudflare
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+X-RateLimit-Limit: 10000
+X-RateLimit-Remaining: 9999
+X-RateLimit-Reset: 173921204969
+ETag: W/"7f49-DKmA2napnO/9B8K7Sz7gJmpzaxY"
+cf-cache-status: DYNAMIC
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=gnXoq9MwTW%2F0OutKzCdPilcuhLynIaRaEEE6XWP9HV6vwTlfuDiGi1PndhkjwR0mxUrd%2BLsu61gS9XcIAY1XiHfbnebzVeO%2FZzazjTb6iNNIOo6Y"}]}
+Content-Encoding: br
+CF-RAY: 978ac40ecd3a09ef-HKG
+alt-svc: h3=":443"; ma=86400
+
+HTTP/1.1 200 OK
+Date: Tue, 02 Sep 2025 05:56:44 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: close
+Server: cloudflare
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+X-RateLimit-Limit: 10000
+X-RateLimit-Remaining: 9999
+X-RateLimit-Reset: 173921204969
+ETag: W/"7f49-DKmA2napnO/9B8K7Sz7gJmpzaxY"
+cf-cache-status: DYNAMIC
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=gnXoq9MwTW%2F0OutKzCdPilcuhLynIaRaEEE6XWP9HV6vwTlfuDiGi1PndhkjwR0mxUrd%2BLsu61gS9XcIAY1XiHfbnebzVeO%2FZzazjTb6iNNIOo6Y"}]}
+Content-Encoding: br
+CF-RAY: 978ac40ecd3a09ef-HKG
+alt-svc: h3=":443"; ma=86400

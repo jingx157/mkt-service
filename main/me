@@ -1,0 +1,47 @@
+GET https://apikey.phanmemmkt.vn/api/v1/customers/me HTTP/1.1
+Accept: application/json, text/plain, */*
+Content-Type: application/json
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) MKTClient/3.0.3 Chrome/130.0.6723.118 Electron/33.2.0 Safari/537.36
+t: 1756792599248
+hash: EC97F2CAEFF8EA39B54E3A7CFE755583294C9ACB6AC4088597ACA184FA38D8CD
+license: UnLicense
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZGU0MjRkMS05YTM3LTRmYjgtYTFkNi05Y2IzMjZlN2FkMmMiLCJlbWFpbCI6Imx0bmdjYWZlQGdtYWlsLmNvbSIsImlhdCI6MTc1Njc5MjYwMSwiZXhwIjoyMzU2NzkyNjAxfQ.INKkfiEc6oIqL6DqzECopJUdulzBvPD8vyN5MNk3Y2M
+Accept-Encoding: gzip, compress, deflate, br
+Host: apikey.phanmemmkt.vn
+Connection: close
+
+HTTP/1.1 200 OK
+Date: Tue, 02 Sep 2025 05:56:42 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: close
+Server: cloudflare
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+X-RateLimit-Limit: 10000
+X-RateLimit-Remaining: 9999
+X-RateLimit-Reset: 173921204887
+ETag: W/"129-AVI1BNOi2YwDUMLb3nmZ7QCcVdo"
+cf-cache-status: DYNAMIC
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=k9xZ1RUv8CrqgMobRoMsXD82%2BPnt2N%2FcI1etSjnLCzQbF6SYBQe7vEsJMrarnUogPKKMcVOuYcWN9%2FN7bx25Bs2vitrXcBqaGyBCU%2FXZIYmBTE1K"}]}
+Content-Encoding: br
+CF-RAY: 978ac4055a55855d-HKG
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": "73d78991-784b-473d-b6bc-f19f0fa6c311",
+    "lifetimeCommission": false,
+    "code": "4pufys5l",
+    "revenue": 0,
+    "balance": 0,
+    "totalSpins": 0,
+    "walletBalance": 0,
+    "source": null,
+    "note": null,
+    "status": true,
+    "country": "VN",
+    "createdAt": "2025-08-11T06:45:20.478Z",
+    "updatedAt": "2025-08-11T06:45:20.478Z",
+    "deletedAt": null
+}

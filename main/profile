@@ -1,0 +1,150 @@
+#
+request header
+GET https: //apikey.phanmemmkt.vn/api/v1/auth/profile HTTP/1.1
+    Accept: application / json, text / plain, *
+    /*
+    Content-Type: application/json
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) MKTClient/3.0.3 Chrome/130.0.6723.118 Electron/33.2.0 Safari/537.36
+    t: 1756792599249
+    hash: 9358762E5D137C1CA854C3AEFA886B18D0AABA3E4F9DD2FF3CD33E3AEA980079
+    license: UnLicense
+    Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZGU0MjRkMS05YTM3LTRmYjgtYTFkNi05Y2IzMjZlN2FkMmMiLCJlbWFpbCI6Imx0bmdjYWZlQGdtYWlsLmNvbSIsImlhdCI6MTc1Njc5MjYwMSwiZXhwIjoyMzU2NzkyNjAxfQ.INKkfiEc6oIqL6DqzECopJUdulzBvPD8vyN5MNk3Y2M
+    Accept-Encoding: gzip, compress, deflate, br
+    Host: apikey.phanmemmkt.vn
+    Connection: close
+
+    #response header
+    HTTP/1.1 200 OK
+    Date: Tue, 02 Sep 2025 05:56:42 GMT
+    Content-Type: application/json; charset=utf-8
+    Transfer-Encoding: chunked
+    Connection: close
+    Server: cloudflare
+    Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+    X-Powered-By: Express
+    Access-Control-Allow-Origin: *
+    X-RateLimit-Limit: 10000
+    X-RateLimit-Remaining: 9999
+    X-RateLimit-Reset: 173921204928
+    ETag: W/"bc0-4+S1MXEkNN7Wj4JZ419P4HV2C3o"
+    cf-cache-status: DYNAMIC
+    Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=1SnkFVgUGUK%2Fu3t1%2FpAmbE0Xe3KID1%2Be2JRgPynHJjMBj67NCcqwbtx28sgZD7%2B178pL%2BGjM22UuvYEc4Xgvwzen%2B1dChUGEOGJYyl1%2FfTRgQg%3D%3D"}]}
+    Content-Encoding: br
+    CF-RAY: 978ac3ff8e23dd89-HKG
+    alt-svc: h3=":443"; ma=86400
+
+    #response body
+    {
+        "id": "5de424d1-9a37-4fb8-a1d6-9cb326e7ad2c",
+        "firstName": " ",
+        "lastName": "LTNG 157",
+        "username": "ltngcafe@gmail.com",
+        "phoneNumber": "+8460666157",
+        "avatar": null,
+        "dob": null,
+        "email": "ltngcafe@gmail.com",
+        "lastLogin": "2025-09-02",
+        "status": true,
+        "emailVerifiedAt": null,
+        "createdAt": "2025-08-11T06:45:20.478Z",
+        "updatedAt": "2025-09-02T05:56:41.119Z",
+        "deletedAt": null,
+        "roles": [],
+        "employee": null,
+        "customer": {
+            "id": "73d78991-784b-473d-b6bc-f19f0fa6c311",
+            "lifetimeCommission": false,
+            "code": "4pufys5l",
+            "revenue": 0,
+            "balance": 0,
+            "totalSpins": 0,
+            "walletBalance": 0,
+            "source": null,
+            "note": null,
+            "status": true,
+            "country": "VN",
+            "createdAt": "2025-08-11T06:45:20.478Z",
+            "updatedAt": "2025-08-11T06:45:20.478Z",
+            "deletedAt": null,
+            "supporters": [
+                {
+                    "id": "5e8668ef-ca83-48d4-974b-52f719c7e91f",
+                    "managerId": null,
+                    "code": "uurjnuyz",
+                    "departmentId": "d9a8c920-a831-4d44-8f43-58b69cf404a9",
+                    "type": 1,
+                    "starRating": 0,
+                    "teamId": "adae2358-b563-43c3-814e-66dd5e5b650b",
+                    "urlReport": null,
+                    "status": true,
+                    "isCurrentAssignLead": null,
+                    "dateOfficial": "2024-10-01T00:00:00.000Z",
+                    "createdAt": "2024-07-09T01:47:22.202Z",
+                    "updatedAt": "2025-02-10T09:41:55.541Z",
+                    "deletedAt": null,
+                    "user": {
+                        "id": "1dc28951-904e-4207-989a-3277090974bc",
+                        "firstName": "MẠNH",
+                        "lastName": "PHAN THANH ",
+                        "username": "manhpv@phanmemmkt.vn",
+                        "phoneNumber": "+84833176567",
+                        "avatar": {
+                            "name": "3330546d-4604-4367-a422-39ad16b3a3e6-475141797_1123436166105771_6535469675930374533_n (1).jpg",
+                            "path": "uploaded-files/avatar/3330546d-4604-4367-a422-39ad16b3a3e6-475141797_1123436166105771_6535469675930374533_n (1).jpg",
+                            "size": 106456,
+                            "mimetype": "image/jpeg"
+                        },
+                        "dob": null,
+                        "email": "manhpv@phanmemmkt.vn",
+                        "lastLogin": "2025-08-26",
+                        "status": true,
+                        "emailVerifiedAt": null,
+                        "createdAt": "2024-07-09T01:47:22.202Z",
+                        "updatedAt": "2025-08-26T07:02:22.206Z",
+                        "deletedAt": null,
+                        "fullName": "PHAN THANH  MẠNH"
+                    },
+                    "support": {
+                        "id": "f422d61b-89f4-4767-902f-af3646a9e20c",
+                        "managerId": null,
+                        "code": "7hrzaktb",
+                        "departmentId": "e80c9e69-f99c-4feb-8ddf-7d46b9883e35",
+                        "type": 1,
+                        "starRating": 0,
+                        "teamId": "62790d54-e878-4e54-b0c4-148e5805161d",
+                        "urlReport": null,
+                        "status": true,
+                        "isCurrentAssignLead": null,
+                        "dateOfficial": "2024-08-01T00:00:00.000Z",
+                        "createdAt": "2024-07-02T04:10:19.291Z",
+                        "updatedAt": "2025-02-18T07:16:28.920Z",
+                        "deletedAt": null,
+                        "user": {
+                            "id": "83d1c81e-a99c-4adf-90a2-6c921044ecaf",
+                            "firstName": " Hương",
+                            "lastName": "Lê Thị Thanh",
+                            "username": "huonglethithanh@phanmemkt.vn",
+                            "phoneNumber": "+84394413000",
+                            "avatar": {
+                                "name": "86aa7ba6-5ec3-45a6-89d6-fd6db1d32b26-26b6cc949fd5268b7fc4.jpg",
+                                "path": "uploaded-files/avatar/86aa7ba6-5ec3-45a6-89d6-fd6db1d32b26-26b6cc949fd5268b7fc4.jpg",
+                                "size": 71113,
+                                "mimetype": "image/jpeg"
+                            },
+                            "dob": null,
+                            "email": "huonglethithanh@phanmemkt.vn",
+                            "lastLogin": "2025-08-30",
+                            "status": true,
+                            "emailVerifiedAt": null,
+                            "createdAt": "2024-07-02T04:10:19.291Z",
+                            "updatedAt": "2025-08-30T01:13:09.158Z",
+                            "deletedAt": null,
+                            "fullName": "Lê Thị Thanh  Hương"
+                        }
+                    }
+                }
+            ]
+        },
+        "host": "TN8CRhoUOhJwVIQEEtwM0huJo6uINzaJyh+0nrQbNnMp3Xniv7xhUILbDXumLLoNOmT+cAZ+uM9FB+Evt2w80n3lg6x6EpGrtNVS6oeqYBNU80oShpnzIGbBFvsKwtPP6auxuj/DLahqII7XfjbN7Q==",
+        "fullName": "LTNG 157  "
+    }

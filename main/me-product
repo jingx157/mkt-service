@@ -1,0 +1,295 @@
+GET https://apikey.phanmemmkt.vn/api/v1/customers/me?includes=planSubscriptions.product HTTP/1.1
+Accept: application/json, text/plain, */*
+Content-Type: application/json
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) MKTClient/3.0.3 Chrome/130.0.6723.118 Electron/33.2.0 Safari/537.36
+t: 1756792601705
+hash: C9871CCB5AD86F5AC07FF7930E94B4A984DFCDD2D83E3C3352508177E0C0FA25
+license: UnLicense
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZGU0MjRkMS05YTM3LTRmYjgtYTFkNi05Y2IzMjZlN2FkMmMiLCJlbWFpbCI6Imx0bmdjYWZlQGdtYWlsLmNvbSIsImlhdCI6MTc1Njc5MjYwMSwiZXhwIjoyMzU2NzkyNjAxfQ.INKkfiEc6oIqL6DqzECopJUdulzBvPD8vyN5MNk3Y2M
+Accept-Encoding: gzip, compress, deflate, br
+Host: apikey.phanmemmkt.vn
+Connection: close
+
+HTTP/1.1 200 OK
+Date: Tue, 02 Sep 2025 05:56:44 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: close
+Server: cloudflare
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+X-RateLimit-Limit: 10000
+X-RateLimit-Remaining: 9999
+X-RateLimit-Reset: 173921204865
+ETag: W/"2737-gg6lsQVHA2QShKIQDepkr5Zs9qQ"
+cf-cache-status: DYNAMIC
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=pjE4et5DAhTOTg1Ai1lncGfz%2FpHnzne9cnmv6GbkgcUWYdxQbiprXcnAo6bsWp3RHJIi8ShfFeGgf58Sh4ehJb2M0GtoUMrEX0jUR%2FcBJ9%2F7fpx2"}]}
+Content-Encoding: br
+CF-RAY: 978ac41188082117-HKG
+alt-svc: h3=":443"; ma=86400
+
+{
+    "id": "73d78991-784b-473d-b6bc-f19f0fa6c311",
+    "lifetimeCommission": false,
+    "code": "4pufys5l",
+    "revenue": 0,
+    "balance": 0,
+    "totalSpins": 0,
+    "walletBalance": 0,
+    "source": null,
+    "note": null,
+    "status": true,
+    "country": "VN",
+    "createdAt": "2025-08-11T06:45:20.478Z",
+    "updatedAt": "2025-08-11T06:45:20.478Z",
+    "deletedAt": null,
+    "planSubscriptions": [
+        {
+            "id": "e8efeefd-e5e7-438a-8768-5cc230c5262e",
+            "tag": "MKT-CARE-.300F709B-762D-546C-8052-F31341048FF9.73d78991-784b-473d-b6bc-f19f0fa6c311",
+            "price": 12000000,
+            "name": "Gói vĩnh viễn - MKT Care",
+            "online": true,
+            "isLock": false,
+            "license": "MKT-CARE-.300F709B-762D-546C-8052-F31341048FF9.73d78991-784b-473d-b6bc-f19f0fa6c311",
+            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZGU0MjRkMS05YTM3LTRmYjgtYTFkNi05Y2IzMjZlN2FkMmMiLCJlbWFpbCI6Imx0bmdjYWZlQGdtYWlsLmNvbSIsImlhdCI6MTc1NjcxMDE1NSwiZXhwIjo0NjM2NzEwMTU1fQ.5MqZpB9GUoEeUUZU-BQ3wWhJ5eNbd5KOIq63tK_qIiY",
+            "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZGU0MjRkMS05YTM3LTRmYjgtYTFkNi05Y2IzMjZlN2FkMmMiLCJlbWFpbCI6Imx0bmdjYWZlQGdtYWlsLmNvbSIsImlhdCI6MTc1NjcxMDE1NSwiZXhwIjoyMzU2NzEwMTU1fQ.oP4lTPAYZN-pFRpVkWXthnB8JHqZvfsvMKcKup2eqCE",
+            "his": "300F709B-762D-546C-8052-F31341048FF9",
+            "onlineAt": "2025-09-01T07:02:35.720Z",
+            "version": "7.0.6",
+            "currency": "VND",
+            "trialPeriod": 0,
+            "trialInterval": "day",
+            "gracePeriod": 0,
+            "graceInterval": "day",
+            "invoicePeriod": 11111,
+            "invoiceInterval": "day",
+            "tier": 6,
+            "note": null,
+            "isChangeProduct": false,
+            "trialEndsAt": null,
+            "startsAt": "2025-08-11T06:45:20.578Z",
+            "endsAt": "2056-01-12T06:45:20.578Z",
+            "canceledAt": null,
+            "changeHisAt": "2025-08-26",
+            "createdAt": "2025-08-11T06:45:20.568Z",
+            "updatedAt": "2025-09-01T07:02:35.724Z",
+            "deletedAt": null,
+            "product": {
+                "id": "617a1fc9-7957-42a4-aec8-e7c712ecbb72",
+                "name": "Phần mềm MKT Care",
+                "slug": "phan-mem-mkt-care",
+                "prefixKey": "MKT-CARE-",
+                "description": "Phần mềm MKT Care là một công cụ quản lý và nuôi tài khoản Facebook tự động, hỗ trợ hiệu quả trong việc kinh doanh và bán hàng online trên Facebook. Phần mềm cung cấp các tính năng như tương tác tự động (like, comment, share), đăng bài tự động trên nhiều nền tảng (Profile, Fanpage, Group), và khả năng thay đổi thông tin tài khoản một cách tự động.",
+                "status": true,
+                "version": "30.0.5",
+                "download": "https://tai-mkt.b-cdn.net/mkt-care/MKT%20Care-5.1.8-win.zip",
+                "url": "https://tai.phanmemmkt.vn/updatecare.rar",
+                "image": {
+                    "name": "281656f1-702f-4f18-94f5-60354c1d086a-MKT care BOX.png",
+                    "path": "uploaded-files/product/281656f1-702f-4f18-94f5-60354c1d086a-MKT care BOX.png",
+                    "size": 377859,
+                    "mimetype": "image/png"
+                },
+                "icon": {
+                    "name": "c7d5c277-f563-4963-80e0-5425da5d3e79-icon-01.png",
+                    "path": "uploaded-files/product/c7d5c277-f563-4963-80e0-5425da5d3e79-icon-01.png",
+                    "size": 573394,
+                    "mimetype": "image/png"
+                },
+                "onClient": true,
+                "slogan": "Quản lý tài khoản marketing 0đ trên facebook",
+                "urlMac": "https://tai-phanmemmkt.b-cdn.net/start/MKT Care-5.0.0-arm64-mac.zip",
+                "urlMacIntel": "https://tai-phanmemmkt.b-cdn.net/start/MKT Care-5.0.0-mac.zip",
+                "urlBanner": "",
+                "urlContent": null,
+                "urlContentSpam": "",
+                "urlVideoDemo": "",
+                "urlTvc": "https://www.youtube.com/embed/XoLMDW9Ll5s?list=PL4sU9xQ4KHnnGZ14KzdVgGQO8JzEwHCF7",
+                "urlVideoUserGuide": "",
+                "urlContentUserGuide": null,
+                "urlDetail": "https://phanmemmkt.vn/phan-mem-mkt-care",
+                "urlDoc": "https://huongdan.phanmemmkt.vn/mkt-care-v2",
+                "urlInstallationGuide": "<p><br></p>",
+                "platform": "window",
+                "promotionAnnouncement": null,
+                "tech": "node",
+                "urlDocAlias": null,
+                "createdAt": "2024-04-16T09:47:59.291Z",
+                "updatedAt": "2025-06-25T15:23:13.723Z",
+                "deletedAt": null
+            },
+            "isFree": false,
+            "isActive": true,
+            "isOnTrial": false,
+            "isCanceled": false,
+            "isLifeTime": true,
+            "remaingDay": 11111
+        },
+        {
+            "id": "8e1e283b-d74b-4493-a9c9-c1f2d8a95142",
+            "tag": "MKT-PAGE-.300F709B-762D-546C-8052-F31341048FF9.73d78991-784b-473d-b6bc-f19f0fa6c311",
+            "price": 10000000,
+            "name": "Gói vĩnh viễn - MKT PAGE",
+            "online": true,
+            "isLock": false,
+            "license": "MKT-PAGE-.300F709B-762D-546C-8052-F31341048FF9.73d78991-784b-473d-b6bc-f19f0fa6c311",
+            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZGU0MjRkMS05YTM3LTRmYjgtYTFkNi05Y2IzMjZlN2FkMmMiLCJlbWFpbCI6Imx0bmdjYWZlQGdtYWlsLmNvbSIsImlhdCI6MTc1Njc5MTkwMywiZXhwIjo0NjM2NzkxOTAzfQ.G6mIyZenmOi6PWC_-zF0M8Ang5EJOAzgm19pS2ikZtI",
+            "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZGU0MjRkMS05YTM3LTRmYjgtYTFkNi05Y2IzMjZlN2FkMmMiLCJlbWFpbCI6Imx0bmdjYWZlQGdtYWlsLmNvbSIsImlhdCI6MTc1Njc5MTkwMywiZXhwIjoyMzU2NzkxOTAzfQ.hBX98CuN2PvzzX-KiUuyc4C4VeZs-ZUrVWXvmwspp9M",
+            "his": "300F709B-762D-546C-8052-F31341048FF9",
+            "onlineAt": "2025-09-02T05:45:03.450Z",
+            "version": "6.0.9",
+            "currency": "VND",
+            "trialPeriod": 0,
+            "trialInterval": "day",
+            "gracePeriod": 0,
+            "graceInterval": "day",
+            "invoicePeriod": 10000,
+            "invoiceInterval": "day",
+            "tier": 0,
+            "note": null,
+            "isChangeProduct": false,
+            "trialEndsAt": null,
+            "startsAt": "2025-08-11T06:47:10.033Z",
+            "endsAt": "2052-12-27T06:47:10.033Z",
+            "canceledAt": null,
+            "changeHisAt": "2025-08-11",
+            "createdAt": "2025-08-11T06:47:10.013Z",
+            "updatedAt": "2025-09-02T05:45:03.454Z",
+            "deletedAt": null,
+            "product": {
+                "id": "1dc95894-4cce-4627-acb2-379fcdc57263",
+                "name": "Phần mềm MKT Page",
+                "slug": "phan-mem-mkt-page",
+                "prefixKey": "MKT-PAGE-",
+                "description": "MKT Page là một phần mềm quản lý nhiều Fanpage Facebook hiệu quả, tự động và toàn diện. Công cụ giúp bạn xây dựng, quản lý và theo dõi các hoạt động của Fanpage, tăng tương tác với khách hàng, khai thác tiềm năng của Facebook để phát triển doanh nghiệp và thương hiệu.",
+                "status": true,
+                "version": "13.0.0",
+                "download": "https://tai-phanmemmkt.b-cdn.net/mkt-page/MKT Page-5.0.0-win.zip",
+                "url": "https://tai.phanmemmkt.vn/updatepage.rar",
+                "image": {
+                    "name": "9698f4cf-c3c0-415d-919c-5ae5e7fd8752-MKT PAGE.png",
+                    "path": "uploaded-files/product/9698f4cf-c3c0-415d-919c-5ae5e7fd8752-MKT PAGE.png",
+                    "size": 482766,
+                    "mimetype": "image/png"
+                },
+                "icon": {
+                    "name": "78e79d2e-a0de-4503-ba18-b4eef06b6ac4-page (2).png",
+                    "path": "uploaded-files/product/78e79d2e-a0de-4503-ba18-b4eef06b6ac4-page (2).png",
+                    "size": 174009,
+                    "mimetype": "image/png"
+                },
+                "onClient": true,
+                "slogan": "Quản lý và xây dựng fanpage Facebook",
+                "urlMac": "",
+                "urlMacIntel": "",
+                "urlBanner": "",
+                "urlContent": null,
+                "urlContentSpam": "",
+                "urlVideoDemo": "",
+                "urlTvc": "https://www.youtube.com/embed/xK5DE5iEK94?si=Cku9dPBhJQM-ylbS",
+                "urlVideoUserGuide": "",
+                "urlContentUserGuide": null,
+                "urlDetail": "https://phanmemmkt.vn/phan-mem-mkt-page",
+                "urlDoc": "https://huongdan.phanmemmkt.vn/phan-mem-mkt-page-v2",
+                "urlInstallationGuide": "<p><br></p>",
+                "platform": "window",
+                "promotionAnnouncement": null,
+                "tech": "csharp",
+                "urlDocAlias": null,
+                "createdAt": "2024-04-16T09:47:59.957Z",
+                "updatedAt": "2025-06-25T15:24:24.945Z",
+                "deletedAt": null
+            },
+            "isFree": false,
+            "isActive": true,
+            "isOnTrial": false,
+            "isCanceled": false,
+            "isLifeTime": true,
+            "remaingDay": 10000
+        },
+        {
+            "id": "d278a7a8-d976-489a-be93-f9f30c466f9b",
+            "tag": "MKT-DATA-.300F709B-762D-546C-8052-F31341048FF9.73d78991-784b-473d-b6bc-f19f0fa6c311",
+            "price": 7000000,
+            "name": "Gói vĩnh viễn - MKT UID",
+            "online": true,
+            "isLock": false,
+            "license": "MKT-DATA-.300F709B-762D-546C-8052-F31341048FF9.73d78991-784b-473d-b6bc-f19f0fa6c311",
+            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZGU0MjRkMS05YTM3LTRmYjgtYTFkNi05Y2IzMjZlN2FkMmMiLCJlbWFpbCI6Imx0bmdjYWZlQGdtYWlsLmNvbSIsImlhdCI6MTc1NjUyNjY4MCwiZXhwIjo0NjM2NTI2NjgwfQ.H_Hdc8sHj8iw9isZzsSA2YVUJJwjYSDc2LF-D7FvHRc",
+            "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZGU0MjRkMS05YTM3LTRmYjgtYTFkNi05Y2IzMjZlN2FkMmMiLCJlbWFpbCI6Imx0bmdjYWZlQGdtYWlsLmNvbSIsImlhdCI6MTc1NjUyNjY4MCwiZXhwIjoyMzU2NTI2NjgwfQ.Ta7FiJyTpEyPXPKUJI54V_ozoUIDpD3UJ2gWVIErGDA",
+            "his": "300F709B-762D-546C-8052-F31341048FF9",
+            "onlineAt": "2025-08-30T04:14:48.538Z",
+            "version": "5.7.0",
+            "currency": "VND",
+            "trialPeriod": 0,
+            "trialInterval": "day",
+            "gracePeriod": 0,
+            "graceInterval": "day",
+            "invoicePeriod": 11111,
+            "invoiceInterval": "day",
+            "tier": 6,
+            "note": null,
+            "isChangeProduct": false,
+            "trialEndsAt": null,
+            "startsAt": "2025-08-11T06:46:16.058Z",
+            "endsAt": "2056-01-12T06:46:16.058Z",
+            "canceledAt": null,
+            "changeHisAt": "2025-08-11",
+            "createdAt": "2025-08-11T06:46:16.045Z",
+            "updatedAt": "2025-08-30T04:14:48.542Z",
+            "deletedAt": null,
+            "product": {
+                "id": "5ef4c0ef-5cee-4988-9f41-cb5ca38a4f12",
+                "name": "Phần mềm MKT UID",
+                "slug": "phan-mem-mkt-data",
+                "prefixKey": "MKT-DATA-",
+                "description": "Phần mềm MKT UID là một công cụ tự động hóa marketing chuyên nghiệp, được thiết kế để phân tích và tổng hợp dữ liệu khách hàng từ Facebook. Nó giúp người dùng tiếp cận nhanh chóng với thông tin khách hàng tiềm năng trên các profile, group, và fanpage. Tính năng chính bao gồm quản lý tài khoản Facebook số lượng lớn, quét thành viên và tương tác trong nhóm, cũng như quét UID tương tác trên fanpage.",
+                "status": true,
+                "version": "8.0.2",
+                "download": "https://tai.phanmemmkt.vn/mkt-uid/MKT-Uid.zip",
+                "url": "https://tai.phanmemmkt.vn/updateuid.rar",
+                "image": {
+                    "name": "95b69d41-3307-4d04-b11f-6339c0351409-mkt-uid-box-248x300.png",
+                    "path": "uploaded-files/product/95b69d41-3307-4d04-b11f-6339c0351409-mkt-uid-box-248x300.png",
+                    "size": 53945,
+                    "mimetype": "image/png"
+                },
+                "icon": {
+                    "name": "50d2ea33-3c4e-4158-9737-9eb459d0e1ee-icon.png",
+                    "path": "uploaded-files/product/50d2ea33-3c4e-4158-9737-9eb459d0e1ee-icon.png",
+                    "size": 28132,
+                    "mimetype": "image/png"
+                },
+                "onClient": true,
+                "slogan": "Phân tích UID, tổng hợp khách hàng tiềm năng Facebook",
+                "urlMac": "",
+                "urlMacIntel": "https://tai.phanmemmkt.vn/updateuid.rar",
+                "urlBanner": "",
+                "urlContent": null,
+                "urlContentSpam": "",
+                "urlVideoDemo": "",
+                "urlTvc": "https://www.youtube.com/embed/f79NJkmdEuY?si=b6563l1vkHHvpYPU",
+                "urlVideoUserGuide": "",
+                "urlContentUserGuide": null,
+                "urlDetail": "https://tai.phanmemmkt.vn/mkt-uid/MKT-Uid.zip",
+                "urlDoc": "https://huongdan.phanmemmkt.vn/phan-mem-mkt-uid/",
+                "urlInstallationGuide": "<p><br></p>",
+                "platform": "windows",
+                "promotionAnnouncement": null,
+                "tech": "node",
+                "urlDocAlias": null,
+                "createdAt": "2024-04-16T09:47:59.051Z",
+                "updatedAt": "2025-03-27T07:03:35.790Z",
+                "deletedAt": null
+            },
+            "isFree": false,
+            "isActive": true,
+            "isOnTrial": false,
+            "isCanceled": false,
+            "isLifeTime": true,
+            "remaingDay": 11111
+        }
+    ]
+}

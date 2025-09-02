@@ -1,0 +1,29 @@
+GET https://apikey.phanmemmkt.vn/subscriber-event/?EIO=4&transport=websocket&sid=LQgdGCAMSlDErH3EABNg HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZGU0MjRkMS05YTM3LTRmYjgtYTFkNi05Y2IzMjZlN2FkMmMiLCJlbWFpbCI6Imx0bmdjYWZlQGdtYWlsLmNvbSIsImlhdCI6MTc1Njc5MjYwMSwiZXhwIjoyMzU2NzkyNjAxfQ.INKkfiEc6oIqL6DqzECopJUdulzBvPD8vyN5MNk3Y2M
+Sec-WebSocket-Version: 13
+Sec-WebSocket-Key: Xhzqo1lgiL52Ge7dPJKWsA==
+Connection: Upgrade
+Upgrade: websocket
+Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+Host: apikey.phanmemmkt.vn
+
+
+EIO: '4'
+transport: websocket
+sid: LQgdGCAMSlDErH3EABNg
+
+
+
+HTTP/1.1 101 Switching Protocols
+Date: Tue, 02 Sep 2025 05:56:47 GMT
+Connection: upgrade
+Upgrade: websocket
+Sec-WebSocket-Accept: ZFXiXITDDPnTnGFGwUH6uHLkFiE=
+Access-Control-Allow-Origin: *
+cf-cache-status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=Y6rpyPyIQWGtdEAJIRXbn%2B1OufeNYLN9ha%2FvUuCreyySRtTxO1z3UhNCV6p697%2BmHJw6jF%2Bli5klkxoGYwog57sFoqEv5lX6PWaabvwAkvZnw9VGnwj1vU7arx2c2q5sTZ%2ByDBeArA%3D%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 978ac420289609fc-HKG
+alt-svc: h3=":443"; ma=86400
+server-timing: cfL4;desc="?proto=TCP&rtt=39674&min_rtt=39574&rtt_var=15040&sent=7&recv=7&lost=0&retrans=0&sent_bytes=3919&recv_bytes=2203&delivery_rate=108482&cwnd=252&unsent_bytes=0&cid=4b3c63b4bbffa1e6&ts=743&x=0"
