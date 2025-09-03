@@ -2667,7 +2667,7 @@ const appLoginRes = {
     type: "Bearer",
   },
   userId: "5de424d1-9a37-4fb8-a1d6-9cb326e7ad2c",
-  his: "300F709B-762D-546C-8052-F31341048FF9",
+  his: "6E37B1D5-34AF-5198-88E5-0755B91D5006",
   remainingDay: 11111,
   isVinhVien: true,
 };
@@ -2675,6 +2675,11 @@ const appLoginRes = {
 const userIdRes = {
   userId: "73d78991-784b-473d-b6bc-f19f0fa6c311",
 };
+
+const versionRes={
+  status:true,
+  host:"TN8CRhoUOhJwVIQEEtwM0huJo6uINzaJyh+0nrQbNnMp3Xniv7xhUILbDXumLLoNOmT+cAZ+uM9FB+Evt2w80n3lg6x6EpGrtNVS6oeqYBNU80oShpnzIGbBFvsKwtPPqCaHlvKb2Td/FVl0N1nBng=="
+}
 
 module.exports = {
   loginHeader,
@@ -2687,4 +2692,5 @@ module.exports = {
   sppRes,
   appLoginRes,
   userIdRes,
+  versionRes
 };

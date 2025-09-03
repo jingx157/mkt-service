@@ -13,12 +13,12 @@ const {
   sppRes,
   appLoginRes,
   userIdRes,
+  versionRes,
 } = require("./data/res.cjs");
-const { useId } = require("react");
 
 function handleRequest(req, res) {
   const { pathname, query } = url.parse(req.url, true);
-  console.log(`${req.method} ${req.url}`);
+  console.log(`${req.method} ${req.url} ${req.da}`);
 
   if (pathname === "/api/v1/auth/login" && req.method === "POST") {
     res.writeHead(201, loginHeader);
@@ -52,9 +52,18 @@ function handleRequest(req, res) {
     return res.end(JSON.stringify(appLoginRes));
   }
 
-  if (pathname === "/api/v1/auth/tool/userId" && req.method === "GET") {
-    res.writeHead(200, pfHeader);
+  if (pathname === "/api/v1/auth/tool/userId" && req.method === "POST") {
+    res.writeHead(201, pfHeader);
     return res.end(JSON.stringify(userIdRes));
+  }
+  if (pathname === "/api/v1/auth/tool/verify-version" && req.method === "POST") {
+    res.writeHead(201, pfHeader);
+    return res.end(JSON.stringify(versionRes));
+  }
+  if (pathname === "/api/v1/auth/tool/2fa" && req.method === "POST") {
+    res.writeHead(201, pfHeader);
+    console.log(req)
+    return res.end(JSON.stringify({}));
   }
 
   res.writeHead(404, { "Content-Type": "application/json" });
