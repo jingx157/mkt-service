@@ -2653,6 +2653,29 @@ const sppRes = {
   totalPage: 1,
 };
 
+const appLoginRes = {
+  accessToken: {
+    value:
+      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZGU0MjRkMS05YTM3LTRmYjgtYTFkNi05Y2IzMjZlN2FkMmMiLCJlbWFpbCI6Imx0bmdjYWZlQGdtYWlsLmNvbSIsImlhdCI6MTc1Njc5NTk5MSwiZXhwIjoyMzU2Nzk1OTkxfQ.DrK2w6ohxu0t78iEHNYQSEp9JQZJ_YN0L1vnweiy3pU",
+    expiresIn: 600000000,
+    type: "Bearer",
+  },
+  refreshToken: {
+    value:
+      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZGU0MjRkMS05YTM3LTRmYjgtYTFkNi05Y2IzMjZlN2FkMmMiLCJlbWFpbCI6Imx0bmdjYWZlQGdtYWlsLmNvbSIsImlhdCI6MTc1Njc5NTk5MSwiZXhwIjo0NjM2Nzk1OTkxfQ.DxBhDQwKGigQVFcLIb0aMoKAjHLCyLNvASTvE3sZm6U",
+    expiresIn: 2880000000,
+    type: "Bearer",
+  },
+  userId: "5de424d1-9a37-4fb8-a1d6-9cb326e7ad2c",
+  his: "300F709B-762D-546C-8052-F31341048FF9",
+  remainingDay: 11111,
+  isVinhVien: true,
+};
+
+const userIdRes = {
+  userId: "73d78991-784b-473d-b6bc-f19f0fa6c311",
+};
+
 module.exports = {
   loginHeader,
   loginRes,
@@ -2662,4 +2685,6 @@ module.exports = {
   meProductRes,
   productRes,
   sppRes,
+  appLoginRes,
+  userIdRes,
 };

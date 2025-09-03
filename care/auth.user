@@ -1,0 +1,41 @@
+POST https://apikey.phanmemmkt.vn/api/v1/auth/tool/userId HTTP/1.1
+Accept: application/json, text/plain, */*
+Content-Type: application/json
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) MKTClient/3.0.3 Chrome/130.0.6723.118 Electron/33.2.0 Safari/537.36
+t: 1756795987819
+hash: 08572A5800F3040699C8046DC360242D68CD38AE41BA902B1C1C935E78595468
+license: NO LICENSE
+Content-Length: 30
+Accept-Encoding: gzip, compress, deflate, br
+Host: apikey.phanmemmkt.vn
+Connection: close
+
+
+{
+    "email": "ltngcafe@gmail.com"
+}
+
+HTTP/1.1 201 Created
+Date: Tue, 02 Sep 2025 06:53:10 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 49
+Connection: close
+Server: cloudflare
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+X-RateLimit-Limit: 10000
+X-RateLimit-Remaining: 9999
+X-RateLimit-Reset: 173921205438
+ETag: W/"31-ZF9ljqyEtB+SEUTcMQSMDDXBS5E"
+cf-cache-status: DYNAMIC
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=oI%2BPtbWKbR6Yw8mBX5yPO3%2FDxBLGeDt74M4xu7GsCCIYcXkJxGnQ40YAX4FcKeEsSFIZsJJUWHZrjlU%2FwfxGN6DkYB1RgyAT%2B9wa%2FR4weIeIRhaO"}]}
+CF-RAY: 978b16b8bd16fd0a-SIN
+alt-svc: h3=":443"; ma=86400
+
+
+
+
+{
+    "userId": "73d78991-784b-473d-b6bc-f19f0fa6c311"
+}

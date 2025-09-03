@@ -1,0 +1,30 @@
+GET https://key.phanmemmkt.vn/ipCheck HTTP/1.1
+Accept: application/json, text/plain, */*
+User-Agent: axios/1.10.0
+Accept-Encoding: gzip, compress, deflate, br
+Host: key.phanmemmkt.vn
+Connection: keep-alive
+
+HTTP/1.1 200 OK
+Date: Tue, 02 Sep 2025 06:53:09 GMT
+Content-Type: text/html; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+vary: Accept-Encoding
+vary: Origin
+Cache-Control: no-cache, private
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Server: cloudflare
+x-content-type-options: "nosniff" always
+x-xss-protection: "1; mode=block" always
+strict-transport-security: "max-age=31536000; includeSubDomains; preload" always
+referrer-policy: no-referrer-when-downgrade
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=MO6bneXT0XDfis868bvzQbMB9%2ByBAtOGzKa%2Bp5ZKnlxHqVPZM2SjbC70xKLRKTDz1CZmadAjtsl9xq%2BBoYrq5bEn%2FImwFV%2F3oEQlBupeX1%2BB"}]}
+cf-cache-status: DYNAMIC
+Content-Encoding: br
+Set-Cookie: XSRF-TOKEN=eyJpdiI6InZudFIvWU5mNlo1dTNEbi9MU2lqSkE9PSIsInZhbHVlIjoiQUdBL0ttMkJ6WGlVMXkvSkVmeHhNMUZzOUxJYU8vUUpXaU00UU5uZjcwdnJTTFh0VkdVWDMrRG04NmMyUjFUc05vMmx2SXFOZlpDakV1RS9LbjJ6ai8zZG1FU29RcTFlOGxUSWs5N1VWcWo1cVNFM0ZMQit0cElLZExxTklDYWYiLCJtYWMiOiI2OTQ4NGVmOWI4N2I5N2RhOWFjODI4ODQwMWI4Mjc0ZTI2YjQ0MDYzMTU4NTljYzhhMzRkZDliNTcwYjcxOTBlIiwidGFnIjoiIn0%3D; SameSite=Lax; Path=/; Domain=phanmemmkt.vn; Max-Age=7200; Expires=Tue, 02 Sep 2025 08:53:09 GMT
+Set-Cookie: phan_mem_mkt_session=eyJpdiI6IjZTdXhVZDd0NUVpNkprU3NzaFNub3c9PSIsInZhbHVlIjoidVRXMzFaUGREd25PaitHK0pzL0JQdnhJb3NISDBwSnJJNGh5ZGM1QnNja3ZQaFVGd1RMSzFSdHBYUUE3K2VNbklMTDlJL1h3Znphb1dtdEJhbVh2YWI1cVlOdGJ5VnpYOFk4dklWcVpSUkJDODhvbjdqQ3ZvdEc3aVhDNEt4TTYiLCJtYWMiOiJiNGIxZTE4ZTY0OGVhZmI3NmJjNzhhY2QxYjI1NDIwOGE4ODJiMTg3ODBlMTA5MGQ0MTczNTlhZjRmMWNlOTFkIiwidGFnIjoiIn0%3D; HttpOnly; SameSite=Lax; Path=/; Domain=phanmemmkt.vn; Max-Age=7200; Expires=Tue, 02 Sep 2025 08:53:09 GMT
+CF-RAY: 978b16b42843f408-SIN
+alt-svc: h3=":443"; ma=86400
+
+45.115.209.23
