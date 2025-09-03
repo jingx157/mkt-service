@@ -188,18 +188,18 @@ const meProductRes = {
   planSubscriptions: [
     {
       id: "e8efeefd-e5e7-438a-8768-5cc230c5262e",
-      tag: "MKT-CARE-.300F709B-762D-546C-8052-F31341048FF9.73d78991-784b-473d-b6bc-f19f0fa6c311",
+      tag: "MKT-CARE-.6E37B1D5-34AF-5198-88E5-0755B91D5006.73d78991-784b-473d-b6bc-f19f0fa6c311",
       price: 12000000,
       name: "Gói vĩnh viễn - MKT Care",
       online: true,
       isLock: false,
       license:
-        "MKT-CARE-.300F709B-762D-546C-8052-F31341048FF9.73d78991-784b-473d-b6bc-f19f0fa6c311",
+        "MKT-CARE-.6E37B1D5-34AF-5198-88E5-0755B91D5006.73d78991-784b-473d-b6bc-f19f0fa6c311",
       token:
         "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZGU0MjRkMS05YTM3LTRmYjgtYTFkNi05Y2IzMjZlN2FkMmMiLCJlbWFpbCI6Imx0bmdjYWZlQGdtYWlsLmNvbSIsImlhdCI6MTc1NjcxMDE1NSwiZXhwIjo0NjM2NzEwMTU1fQ.5MqZpB9GUoEeUUZU-BQ3wWhJ5eNbd5KOIq63tK_qIiY",
       accessToken:
         "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZGU0MjRkMS05YTM3LTRmYjgtYTFkNi05Y2IzMjZlN2FkMmMiLCJlbWFpbCI6Imx0bmdjYWZlQGdtYWlsLmNvbSIsImlhdCI6MTc1NjcxMDE1NSwiZXhwIjoyMzU2NzEwMTU1fQ.oP4lTPAYZN-pFRpVkWXthnB8JHqZvfsvMKcKup2eqCE",
-      his: "300F709B-762D-546C-8052-F31341048FF9",
+      his: "6E37B1D5-34AF-5198-88E5-0755B91D5006",
       onlineAt: "2025-09-01T07:02:35.720Z",
       version: "7.0.6",
       currency: "VND",
@@ -277,18 +277,18 @@ const meProductRes = {
     },
     {
       id: "8e1e283b-d74b-4493-a9c9-c1f2d8a95142",
-      tag: "MKT-PAGE-.300F709B-762D-546C-8052-F31341048FF9.73d78991-784b-473d-b6bc-f19f0fa6c311",
+      tag: "MKT-PAGE-.6E37B1D5-34AF-5198-88E5-0755B91D5006.73d78991-784b-473d-b6bc-f19f0fa6c311",
       price: 10000000,
       name: "Gói vĩnh viễn - MKT PAGE",
       online: true,
       isLock: false,
       license:
-        "MKT-PAGE-.300F709B-762D-546C-8052-F31341048FF9.73d78991-784b-473d-b6bc-f19f0fa6c311",
+        "MKT-PAGE-.6E37B1D5-34AF-5198-88E5-0755B91D5006.73d78991-784b-473d-b6bc-f19f0fa6c311",
       token:
         "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZGU0MjRkMS05YTM3LTRmYjgtYTFkNi05Y2IzMjZlN2FkMmMiLCJlbWFpbCI6Imx0bmdjYWZlQGdtYWlsLmNvbSIsImlhdCI6MTc1Njc5MTkwMywiZXhwIjo0NjM2NzkxOTAzfQ.G6mIyZenmOi6PWC_-zF0M8Ang5EJOAzgm19pS2ikZtI",
       accessToken:
         "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZGU0MjRkMS05YTM3LTRmYjgtYTFkNi05Y2IzMjZlN2FkMmMiLCJlbWFpbCI6Imx0bmdjYWZlQGdtYWlsLmNvbSIsImlhdCI6MTc1Njc5MTkwMywiZXhwIjoyMzU2NzkxOTAzfQ.hBX98CuN2PvzzX-KiUuyc4C4VeZs-ZUrVWXvmwspp9M",
-      his: "300F709B-762D-546C-8052-F31341048FF9",
+      his: "6E37B1D5-34AF-5198-88E5-0755B91D5006",
       onlineAt: "2025-09-02T05:45:03.450Z",
       version: "6.0.9",
       currency: "VND",
@@ -364,18 +364,18 @@ const meProductRes = {
     },
     {
       id: "d278a7a8-d976-489a-be93-f9f30c466f9b",
-      tag: "MKT-DATA-.300F709B-762D-546C-8052-F31341048FF9.73d78991-784b-473d-b6bc-f19f0fa6c311",
+      tag: "MKT-DATA-.6E37B1D5-34AF-5198-88E5-0755B91D5006.73d78991-784b-473d-b6bc-f19f0fa6c311",
       price: 7000000,
       name: "Gói vĩnh viễn - MKT UID",
       online: true,
       isLock: false,
       license:
-        "MKT-DATA-.300F709B-762D-546C-8052-F31341048FF9.73d78991-784b-473d-b6bc-f19f0fa6c311",
+        "MKT-DATA-.6E37B1D5-34AF-5198-88E5-0755B91D5006.73d78991-784b-473d-b6bc-f19f0fa6c311",
       token:
         "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZGU0MjRkMS05YTM3LTRmYjgtYTFkNi05Y2IzMjZlN2FkMmMiLCJlbWFpbCI6Imx0bmdjYWZlQGdtYWlsLmNvbSIsImlhdCI6MTc1NjUyNjY4MCwiZXhwIjo0NjM2NTI2NjgwfQ.H_Hdc8sHj8iw9isZzsSA2YVUJJwjYSDc2LF-D7FvHRc",
       accessToken:
         "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZGU0MjRkMS05YTM3LTRmYjgtYTFkNi05Y2IzMjZlN2FkMmMiLCJlbWFpbCI6Imx0bmdjYWZlQGdtYWlsLmNvbSIsImlhdCI6MTc1NjUyNjY4MCwiZXhwIjoyMzU2NTI2NjgwfQ.Ta7FiJyTpEyPXPKUJI54V_ozoUIDpD3UJ2gWVIErGDA",
-      his: "300F709B-762D-546C-8052-F31341048FF9",
+      his: "6E37B1D5-34AF-5198-88E5-0755B91D5006",
       onlineAt: "2025-08-30T04:14:48.538Z",
       version: "5.7.0",
       currency: "VND",
