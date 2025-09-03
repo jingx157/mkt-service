@@ -15,8 +15,9 @@ const {
   userIdRes,
   versionRes,
 } = require("./data/res.cjs");
+const { fetch2FAToken } = require("./2fa.cjs");
 
-function handleRequest(req, res) {
+async function handleRequest(req, res) {
   const { pathname, query } = url.parse(req.url, true);
   console.log(`${req.method} ${req.url} ${req.da}`);
 
@@ -56,14 +57,36 @@ function handleRequest(req, res) {
     res.writeHead(201, pfHeader);
     return res.end(JSON.stringify(userIdRes));
   }
-  if (pathname === "/api/v1/auth/tool/verify-version" && req.method === "POST") {
+  if (
+    pathname === "/api/v1/auth/tool/verify-version" &&
+    req.method === "POST"
+  ) {
     res.writeHead(201, pfHeader);
     return res.end(JSON.stringify(versionRes));
   }
   if (pathname === "/api/v1/auth/tool/2fa" && req.method === "POST") {
-    res.writeHead(201, pfHeader);
-    console.log(req)
-    return res.end(JSON.stringify({}));
+    try {
+      const body = await readJsonBody(req);
+      const secret = body.key;
+      if (!secret) {
+        res.writeHead(400, { "Content-Type": "application/json" });
+        return res.end(
+          JSON.stringify({ error: "Missing 'key' in request body" })
+        );
+      }
+      const data = await fetch2FAToken(secret);
+      // use your pfHeader, keep status 201 if you want
+      res.writeHead(201, pfHeader);
+      return res.end(JSON.stringify(data));
+    } catch (err) {
+      res.writeHead(502, { "Content-Type": "application/json" });
+      return res.end(
+        JSON.stringify({
+          error: "Failed to fetch from 2fa.live",
+          detail: err.message,
+        })
+      );
+    }
   }
 
   res.writeHead(404, { "Content-Type": "application/json" });
