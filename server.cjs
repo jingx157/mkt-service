@@ -22,24 +22,27 @@ function readJsonBody(req) {
     let data = "";
     req.on("data", (chunk) => {
       data += chunk;
-      if (data.length > 1e6) { // ~1MB guard
+      if (data.length > 1e6) {
+        // ~1MB guard
         req.destroy();
         reject(new Error("Request body too large"));
       }
     });
     req.on("end", () => {
       if (!data) return resolve({});
-      try { resolve(JSON.parse(data)); }
-      catch { reject(new Error("Invalid JSON body")); }
+      try {
+        resolve(JSON.parse(data));
+      } catch {
+        reject(new Error("Invalid JSON body"));
+      }
     });
     req.on("error", reject);
   });
 }
 
-
 async function handleRequest(req, res) {
   const { pathname, query } = url.parse(req.url, true);
-  
+
   console.log(`${req.method} ${req.url}`);
 
   if (pathname === "/api/v1/auth/login" && req.method === "POST") {
@@ -82,7 +85,7 @@ async function handleRequest(req, res) {
     pathname === "/api/v1/auth/tool/verify-version" &&
     req.method === "POST"
   ) {
-    console.log(versionRes)
+    console.log(versionRes);
     return res.end(JSON.stringify(versionRes));
   }
   if (pathname === "/api/v1/auth/tool/2fa" && req.method === "POST") {
@@ -90,9 +93,9 @@ async function handleRequest(req, res) {
       const body = await readJsonBody(req);
       const secret = body.key;
       const code = await getTotpCode(secret);
-      console.log(code)
+      console.log(code);
       res.writeHead(201, pfHeader);
-      return res.end(JSON.stringify({code}));
+      return res.end(JSON.stringify({ code }));
     } catch (err) {
       res.writeHead(502, { "Content-Type": "application/json" });
       return res.end(
@@ -102,6 +105,66 @@ async function handleRequest(req, res) {
         })
       );
     }
+  }
+
+  if (pathname === "/api/v1/chromes/profile" && req.method === "POST") {
+    return readJsonBody(req)
+      .then((body = {}) => {
+        const profileName = body.profileName || "61580146070495-win";
+        const uuid = (body.profileId || "61580146070495").split("-")[0];
+
+        const configHex = buildConfigMktHex({
+          uuid,
+          profileName,
+          // tweak these if you like:
+          fonts: [
+            "Roboto",
+            "Arial",
+            "Courier",
+            "Courier New",
+            "Georgia",
+            "Times New Roman",
+            "Verdana",
+          ],
+          localIp: "192.168.1.67",
+        });
+
+        const payload = {
+          "config.mkt": configHex, // <-- hex-encoded plaintext
+          "network.mkt": buildNetworkMkt({}), // <-- plain text with \n line breaks
+          command: {
+            "--no-sandbox": "",
+            "--no-first-run": "",
+            "--metrics-recording-only": "",
+            "--no-default-browser-check": "",
+            "--disable-features":
+              "FlashDeprecationWarning,EnablePasswordsAccountStorage,CalculateNativeWinOcclusion,OptimizationHints,AcceleratedVideoDecode,ChromeLabs,ReadLater,ChromeWhatsNewUI,TrackingProtection3pcd",
+            "--disable-crash-reporter": "",
+            "--disable-background-timer-throttling": "",
+            "--disable-backgrounding-occluded-windows": "",
+            "--disable-renderer-backgrounding": "",
+            "--hide-crash-restore-bubble": "",
+            "--disable-background-mode": "",
+            "--disable-timer-throttling": "",
+            "--disable-render-backgrounding": "",
+            "--disable-background-media-suspend": "",
+            "--disable-external-intent-requests": "",
+            "--disable-ipc-flooding-protection": "",
+            "--enable-unsafe-webgpu": "",
+            "--lang": body.language || "vi",
+          },
+          commandCustom: "",
+          isForwardProxy: true,
+        };
+
+        res.writeHead(201, pfHeader || { "Content-Type": "application/json" });
+        return res.end(JSON.stringify(payload));
+      })
+      .catch((err) => {
+        console.error("profile handler error:", err);
+        res.writeHead(500, { "Content-Type": "application/json" });
+        res.end(JSON.stringify({ error: "internal" }));
+      });
   }
 
   res.writeHead(404, { "Content-Type": "application/json" });
