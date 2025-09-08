@@ -29,7 +29,7 @@ const loginRes = {
   userId: "5de424d1-9a37-4fb8-a1d6-9cb326e7ad2c",
   isCustomer: true,
   isEmployee: false,
-  host: "TN8CRhoUOhJwVIQEEtwM0huJo6uINzaJyh+0nrQbNnMp3Xniv7xhUILbDXumLLoNOmT+cAZ+uM9FB+Evt2w80n3lg6x6EpGrtNVS6oeqYBNU80oShpnzIGbBFvsKwtPPqCaHlvKb2Td/FVl0N1nBng==",
+  host: "TN8CRhoUOhJwVIQEEtwM0huJo6uINzaJyh+0nrQbNnMp3Xniv7xhUILbDXumLLoNOmT+cAZ+uM9FB+Evt2w80n3lg6x6EpGrtNVS6oeqYBNU80oShpnzIGbBFvsKwtPPX1AFQNBpkubh48/XkI5scA==",
 };
 
 const pfHeader = {
@@ -149,7 +149,7 @@ const pfRes = {
       },
     ],
   },
-  host: "TN8CRhoUOhJwVIQEEtwM0huJo6uINzaJyh+0nrQbNnMp3Xniv7xhUILbDXumLLoNOmT+cAZ+uM9FB+Evt2w80n3lg6x6EpGrtNVS6oeqYBNU80oShpnzIGbBFvsKwtPP6auxuj/DLahqII7XfjbN7Q==",
+  host: "TN8CRhoUOhJwVIQEEtwM0huJo6uINzaJyh+0nrQbNnMp3Xniv7xhUILbDXumLLoNOmT+cAZ+uM9FB+Evt2w80n3lg6x6EpGrtNVS6oeqYBNU80oShpnzIGbBFvsKwtPPEMylZRrH8zeB+mNeL9LKPg==",
   fullName: "LTNG 157  ",
 };
 
@@ -2677,10 +2677,9 @@ const userIdRes = {
 };
 
 const versionRes={
-  status:true,
-  host:"TN8CRhoUOhJwVIQEEtwM0huJo6uINzaJyh+0nrQbNnMp3Xniv7xhUILbDXumLLoNOmT+cAZ+uM9FB+Evt2w80n3lg6x6EpGrtNVS6oeqYBNU80oShpnzIGbBFvsKwtPPqCaHlvKb2Td/FVl0N1nBng=="
+    "success": true,
+    "host": "TN8CRhoUOhJwVIQEEtwM0huJo6uINzaJyh+0nrQbNnMp3Xniv7xhUILbDXumLLoNOmT+cAZ+uM9FB+Evt2w80n3lg6x6EpGrtNVS6oeqYBNU80oShpnzIGbBFvsKwtPPBbQTCRxXCOhxrjwNRFLhkg=="
 }
-
 module.exports = {
   loginHeader,
   loginRes,

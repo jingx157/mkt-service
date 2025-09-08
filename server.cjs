@@ -15,11 +15,32 @@ const {
   userIdRes,
   versionRes,
 } = require("./data/res.cjs");
-const { fetch2FAToken } = require("./2fa.cjs");
+const { getTotpCode } = require("./2fa.cjs");
+
+function readJsonBody(req) {
+  return new Promise((resolve, reject) => {
+    let data = "";
+    req.on("data", (chunk) => {
+      data += chunk;
+      if (data.length > 1e6) { // ~1MB guard
+        req.destroy();
+        reject(new Error("Request body too large"));
+      }
+    });
+    req.on("end", () => {
+      if (!data) return resolve({});
+      try { resolve(JSON.parse(data)); }
+      catch { reject(new Error("Invalid JSON body")); }
+    });
+    req.on("error", reject);
+  });
+}
+
 
 async function handleRequest(req, res) {
   const { pathname, query } = url.parse(req.url, true);
-  console.log(`${req.method} ${req.url} ${req.da}`);
+  
+  console.log(`${req.method} ${req.url}`);
 
   if (pathname === "/api/v1/auth/login" && req.method === "POST") {
     res.writeHead(201, loginHeader);
@@ -61,23 +82,17 @@ async function handleRequest(req, res) {
     pathname === "/api/v1/auth/tool/verify-version" &&
     req.method === "POST"
   ) {
-    res.writeHead(201, pfHeader);
+    console.log(versionRes)
     return res.end(JSON.stringify(versionRes));
   }
   if (pathname === "/api/v1/auth/tool/2fa" && req.method === "POST") {
     try {
       const body = await readJsonBody(req);
       const secret = body.key;
-      if (!secret) {
-        res.writeHead(400, { "Content-Type": "application/json" });
-        return res.end(
-          JSON.stringify({ error: "Missing 'key' in request body" })
-        );
-      }
-      const data = await fetch2FAToken(secret);
-      // use your pfHeader, keep status 201 if you want
+      const code = await getTotpCode(secret);
+      console.log(code)
       res.writeHead(201, pfHeader);
-      return res.end(JSON.stringify(data));
+      return res.end(JSON.stringify({code}));
     } catch (err) {
       res.writeHead(502, { "Content-Type": "application/json" });
       return res.end(
